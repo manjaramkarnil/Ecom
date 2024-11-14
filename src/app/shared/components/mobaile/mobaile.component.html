@@ -1,0 +1,17 @@
+
+<div class="card mb-3" *ngFor="let phone of phonearray">
+    <div class="card-body"> 
+        <img class="img" [src]="phone.image" alt="">
+        <p class="text-center"><strong>Rs{{phone.price}}</strong></p>
+        <div class="d-fex-justify-content-between">
+            <h2>{{phone.brand}}</h2>
+        </div>
+        <p class="text-right p-3">
+            
+            <span [ngClass]="{
+                'bg-success' : phone.isAvailable,
+                'bg-warning' : !phone.isAvailable
+            }">{{phone.isAvailable?(phone.name):"This phone is Not Available At this Moment !!!"}}</span>
+        </p>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offcet-3">
+            <div class="card">
+
+                <div class="card-form d-flex justify-content-center">
+
+                    <div class="form-group ">
+                        <label for="">Id</label>
+                        <input type="text" #Id class="form-control">
+                    <div class="form-group">
+                        <label for="">Title</label>
+                        <input type="text" #title class="form-control">
+
+                    
+
+                        <div class="form-group">
+                            <label for="">Description</label>
+                            <input type="text" #des class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Price</label>
+                            <input type="text" #price class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">category</label>
+                            <input type="text" #cat class="form-control">
+                        </div>
+                         <div class="form-group">
+                            <label for="">img</label>
+                            <input type="text" #img class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">rating</label>
+                            <input type="text" #rating class="
+                            form-control">
+                        </div>
+                    </div>
+                    <button class="btn btn-success text-center" (click)="product(title.value,des.value,cat.value,img.value)">Add-Product</button>
+                   
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>

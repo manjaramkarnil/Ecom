@@ -1,0 +1,62 @@
+
+<mat-sidenav-container fullscreen>
+  <mat-sidenav #sidenav>
+    <mat-nav-list (click)="sidenav.close()">
+    <a mat-list-item>
+      <mat-icon>library_books</mat-icon>
+      <span>BOOKS</span>
+    </a>
+    <!-- <a mat-list-item>
+      <mat-icon  routerLink="/phone">phon</mat-icon>
+      
+      <span>phons</span> -->
+
+
+
+    <a mat-list-item>
+      <mat-icon>add_post</mat-icon>
+      <span>post</span>
+    </a>
+    <a mat-list-item>
+      <mat-icon> account_circle</mat-icon>
+      <span>About Us</span>
+    </a>
+    <a mat-list-item>
+      <mat-icon> account_circle</mat-icon>
+      <span>Logout</span>
+    </a>
+
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-toolbar color="danger" class="d-flex justify-content-between">
+
+    <div>
+      <button mat-icon-button (click)="sidenav.open()">
+        <mat-icon>menu</mat-icon>
+        </button>
+  
+       
+   
+    <div class="mat-button" routerLink="/Buy" >BUY</div>
+    <div class="mat-button" routerLink="/sell">Sell</div>
+  </div>
+  <div>
+    <mat-icon>shopping</mat-icon>
+  
+  </div>
+    
+    
+  </mat-toolbar>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- <app-dashboard></app-dashboard> -->
+        <router-outlet></router-outlet>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+</mat-sidenav-container>
